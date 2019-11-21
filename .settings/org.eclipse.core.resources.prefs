@@ -1,2 +1,4 @@
 eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/common/inc.jsp=UTF-8
 encoding//WebContent/hardwareInfo.jsp=UTF-8
+encoding//src/com/asiainfo/demo/RuntimeServe.java=UTF-8

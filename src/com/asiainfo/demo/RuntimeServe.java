@@ -15,9 +15,12 @@ import javax.servlet.http.HttpSession;
 
 import org.hyperic.sigar.Sigar;
 
-import com.sun.net.httpserver.HttpServer;
-
 public class RuntimeServe extends HttpServlet{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -51,9 +54,9 @@ public class RuntimeServe extends HttpServlet{
 		}
 		String ip = addr.getHostAddress();
 		Map<String, String> map = System.getenv();
-		String userName = map.get("s");// 获取用户名
-		String computerName = map.get("COMPUTERNAME");// 获取计算机名
-		String userDomain = map.get("USERDOMAIN");// 获取计算机域名
+		String userName = map.get("s");// 鑾峰彇鐢ㄦ埛鍚�
+		String computerName = map.get("COMPUTERNAME");// 鑾峰彇璁＄畻鏈哄悕
+		String userDomain = map.get("USERDOMAIN");// 鑾峰彇璁＄畻鏈哄煙鍚�
 		long totalMemory =r.totalMemory();
 	    long freeMemory = r.freeMemory();
 		
